@@ -26,6 +26,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: var(--cor-texto);
 }
 
 .container ul li a::after {
