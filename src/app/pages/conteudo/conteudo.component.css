@@ -1,0 +1,16 @@
+.banner {
+    width: 100%;
+    background-color: var(--destaques);
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte-texto)
+}
+
+.slogan {
+    width: 250px;
+    text-wrap: wrap;
+}
+
