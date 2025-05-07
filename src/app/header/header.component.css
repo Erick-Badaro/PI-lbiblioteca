@@ -10,6 +10,11 @@
     color: var(--cor-texto);
 }
 
+.container h1 a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
 .container ul {
     display: flex;
     gap: 50px;
