@@ -1,17 +1,27 @@
 .banner {
     width: 100%;
     background-image: url('/assets/banner.jpg');
-
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: var(--fonte-texto)
+    font-family: var(--fonte-texto);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slogan {
-    width: 250px;
-    text-wrap: wrap;
+    max-width: 400px;
+    padding: 24px 32px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 16px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(4px); 
 }
 
