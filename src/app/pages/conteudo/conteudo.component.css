@@ -25,3 +25,77 @@
     backdrop-filter: blur(4px); 
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 50px;
+}
+
+.card img {
+    width: 220px;
+    height: 274px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fundo-principal);
+    height: 450px;
+    padding-top: 50px;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.card span {
+    display: flex;
+    gap: 20px;
+}
+
+  
+  .card {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .info {
+    margin-bottom: 20px;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .btn {
+    background-color: #6d2c22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: Georgia, serif;
+  }
+  
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
