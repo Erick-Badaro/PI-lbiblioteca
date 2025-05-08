@@ -1,6 +1,7 @@
 .banner {
     width: 100%;
-    background-color: var(--destaques);
+    background-image: url('/assets/banner.jpg');
+
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
