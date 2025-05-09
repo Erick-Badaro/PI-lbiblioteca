@@ -1,0 +1,29 @@
+{
+    "livro": [
+        {
+            "id": 1,
+            "titulo": "código limpo",
+            "autor": " Robert C. Martin",
+            "editora": "Alta Books",
+            "valor": 250.00,
+            "capa": "assets/banner.jpg"
+        }
+    ],
+    "usuario": [
+        {
+            "id": 1,
+            "nome": "erick",
+            "email": "erick@email.com",
+            "senha": "123senac123"
+        }
+    ],
+    "pedido": [
+        {
+            "id": 1,
+            "livroId": 1,
+            "usuarioId": 1,
+            "quantidade": 10,
+            "valor": 2500.00
+        }
+    ]
+}

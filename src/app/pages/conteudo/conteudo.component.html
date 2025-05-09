@@ -4,88 +4,20 @@
     </div>
 </div>
 <div class="container">
+  @for (livro of listaLivro; track livro) {
     <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
+        <img src="{{ livro.capa }}" alt="capa">
         <div class="info">
           <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
+            <span class="label">{{ livro.titulo}}</span>
+            <span class="label">R${{ livro.valor}}</span>
           </div>
           <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
+            <span class="label">{{ livro.autor}}</span>
+            <span class="label">{{ livro.editora}}</span>
           </div>
         </div>
         <button class="btn">Saber mais</button>
     </div>
-    <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
-          </div>
-          <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
-          </div>
-        </div>
-        <button class="btn">Saber mais</button>
-    </div>
-    <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
-          </div>
-          <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
-          </div>
-        </div>
-        <button class="btn">Saber mais</button>
-    </div>
-    <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
-          </div>
-          <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
-          </div>
-        </div>
-        <button class="btn">Saber mais</button>
-    </div>
-    <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
-          </div>
-          <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
-          </div>
-        </div>
-        <button class="btn">Saber mais</button>
-    </div>
-    <div class="card">
-        <img src="assets/banner.jpg" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">TÍTULO DO LIVRO</span>
-            <span class="label">VALOR</span>
-          </div>
-          <div class="linha">
-            <span class="label">AUTOR</span>
-            <span class="label">EDITORA</span>
-          </div>
-        </div>
-        <button class="btn">Saber mais</button>
-    </div>
+  }
 </div>

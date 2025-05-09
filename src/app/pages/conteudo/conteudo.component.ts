@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Livro } from '../../core/types/livro';
+import { LivrariaService } from '../../core/services/livraria.service';
 
 @Component({
   selector: 'app-conteudo',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './conteudo.component.css'
 })
 export class ConteudoComponent {
-
+ listaLivro: Livro[] = [];
+ 
+ constructor(private service: LivrariaService) {}
+ ngOnInit(): void {
+   this.service.listarLivro().subscribe((livros) => {
+     this.listaLivro = livros.slice(0,6);
+    });
+  }
 }
