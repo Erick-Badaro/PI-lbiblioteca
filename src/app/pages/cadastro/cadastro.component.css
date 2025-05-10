@@ -1,4 +1,4 @@
-    .login-container {
+.cadastro-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,24 +12,24 @@
   }
 
   
-  .login-box {
+  .cadastro-box {
     background: #ffffff;
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: var(--sombra);
     width: 340px;
-    height: 400px;
+    height: 500px;
     text-align: center;
     padding-right: 4rem;
   }
   
-  .login-box h2 {
+  .cadastro-box h2 {
     margin-bottom: 2.5rem;
     color: var(--primaria);
     font-family: var(--fonte-titulo);
   }
   
-  .login-box input {
+  .cadastro-box input {
     width: 100%;
     padding: 12px;
     margin-bottom: 3rem;
@@ -43,7 +43,7 @@
 
   
   
-  .login-box button {
+  .cadastro-box button {
     width: 360px;
     padding: 12px;
     background-color: var(--segundaria);
@@ -56,7 +56,7 @@
     margin-top: 1.7rem;
   }
   
-  .login-box button:hover {
+  .cadastro-box button:hover {
     background-color: #a8841c; 
   }
   
