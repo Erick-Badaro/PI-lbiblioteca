@@ -5,5 +5,6 @@ export interface Livro {
     editora: string,
     valor: number,
     estoque: number,
-    capa: string
+    capa: string,
+    sinopse: string
 }

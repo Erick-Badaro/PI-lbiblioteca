@@ -16,4 +16,9 @@ export class LivrariaService {
   listarLivro(): Observable <Livro[]> {
     return this.http.get<Livro[]>(this.livro);
   }
+
+visualizarLivro(id: number): Observable<Livro> {
+  return this.http.get<Livro>(this.livro + `/${id}`);
+}
+
 }
