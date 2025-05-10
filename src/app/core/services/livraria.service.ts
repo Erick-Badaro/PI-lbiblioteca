@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Livro } from '../types/livro';
+import { Usuario } from '../types/usuario';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,10 @@ export class LivrariaService {
 
 visualizarLivro(id: number): Observable<Livro> {
   return this.http.get<Livro>(this.livro + `/${id}`);
+}
+
+validarLogin(email: string, senha: string):Observable<Usuario[]>{
+  return this.http.get<Usuario[]>(`${this.usuario}?email=${email}&senha=${senha}`);
 }
 
 }
