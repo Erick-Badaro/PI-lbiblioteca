@@ -17,7 +17,7 @@
             <span class="label">{{ livro.editora}}</span>
           </div>
         </div>
-        <button class="btn">Saber mais</button>
+        <button class="btn" [routerLink]="['/visualizar', livro.id]">Saber mais</button>
     </div>
   }
 </div>

@@ -1,0 +1,77 @@
+.container {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: var(--fonte-texto);
+}
+
+.container .card {
+    width: 1251px;
+    height: 917px;
+    background-color: var(--fundo-principal);
+    display: flex;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+}
+
+.container .card img {
+    width: 500px;
+    height: 600px;
+    border-radius: 3px;
+    padding-top: 75px;
+}
+
+.container .card #left {
+    display: flex;
+    width: calc(1251px / 2);
+    height: 917px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .card #right {
+    display: flex;
+    flex-direction: column;
+    width: calc(1251px / 2);
+    height: 917px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container .card #right span {
+    display: flex;
+    width: 300px;
+    row-gap: 20px;
+    column-gap: 100px;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--fonte-titulo);
+}
+
+.container .card #right .sinopse {
+    width: 510px;
+    font-size: 20px;
+}
+
+.container .card #right > p {
+    font-size: 25px;
+    font-family: var(--fonte-titulo);
+}
+
+.container .card #right > button {
+    border: none;
+    background-color: var(--destaques);
+    color: white;
+    border-radius: 5px;
+    width: 510px;
+    height: 75px;
+    font-size: 25px;
+    cursor: pointer;
+}
