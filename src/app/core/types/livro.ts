@@ -4,5 +4,6 @@ export interface Livro {
     autor: string,
     editora: string,
     valor: number,
+    estoque: number,
     capa: string
 }
