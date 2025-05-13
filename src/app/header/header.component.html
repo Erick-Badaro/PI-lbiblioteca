@@ -14,14 +14,19 @@
   
       <ng-template #logado>
         <span>
-          <img src="user.svg" alt="">
-          <li>
-            <a>Olá, {{ usuario?.nome }}</a> |
-            <a style="cursor: pointer;" (click)="logout()">Sair</a>
+          <li id="usuario">
+            <span>
+                <img src="user.svg" alt="usuario">
+                <a id="nome">Olá, {{ usuario?.nome }}</a>
+            </span>
+            <ul id="dropdown">
+                <li><a routerLink="/pedido">Carrinho</a></li>
+                <li><a routerLink="/">Meus dados</a></li>
+                <li><a (click)="logout()" id="sair">Sair</a><img src="log-out.svg" alt="sair"></li>
+            </ul>
           </li>
         </span>
       </ng-template>
   
     </ul>
   </div>
-  
