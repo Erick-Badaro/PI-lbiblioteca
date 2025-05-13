@@ -39,6 +39,18 @@
       "nome": "Evandro ",
       "email": "evandro@email.com",
       "senha": "123senac123"
+    },
+    {
+      "id": "75ec",
+      "nome": "Victor Lacerda",
+      "email": "deverickbadaro@gmail.com",
+      "senha": "senac123"
+    },
+    {
+      "id": "3768",
+      "nome": "Luiz Espalha",
+      "email": "luizespalhalixo@gmail.com",
+      "senha": "catapimbas"
     }
   ],
   "pedido": [

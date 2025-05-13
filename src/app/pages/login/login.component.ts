@@ -35,7 +35,12 @@ export class LoginComponent {
         this.router.navigate(['/conteudo']);
       } else {
         this.erroLogin = true;
+        setTimeout(() => {
+          this.erroLogin = false;
+        }, 3000);
       }
+
+      
     });
 
 }

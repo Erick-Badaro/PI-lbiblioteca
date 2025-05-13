@@ -2,6 +2,15 @@
   <div class="cadastro-box">
     <h2>Cadastro</h2>
 
+    <div *ngIf="sucessoCadastro" class="popup sucesso-popup">
+      Cadastro realizado com sucesso!
+    </div>
+    
+    <div *ngIf="erroCadastro" class="popup erro-popup">
+      Erro ao cadastrar usuário.
+    </div>
+    
+
     <form (ngSubmit)="cadastrar()">
       <input
         type="text"
