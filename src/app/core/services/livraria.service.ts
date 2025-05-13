@@ -4,6 +4,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { Livro } from '../types/livro';
 import { Usuario } from '../types/usuario';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -56,6 +57,10 @@ estaLogado(): boolean{
   return this.getUsuarioLogado() !== null;
 }
 
+
+incluir(usuario: Usuario): Observable<Usuario>{
+  return this.http.post<Usuario>(this.usuario, usuario)
+}
 
 
 }

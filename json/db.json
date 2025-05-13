@@ -1,41 +1,53 @@
 {
-    "livro": [
-        {
-            "id": 1,
-            "titulo": "código limpo",
-            "autor": " Robert C. Martin",
-            "editora": "Alta Books",
-            "valor": 250.00,
-            "estoque": 10,
-            "capa": "assets/banner.jpg",
-            "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
-        },
-        {
-            "id": 2,
-            "titulo": "limpo",
-            "autor": " Robert C. Martin",
-            "editora": "Alta Books",
-            "valor": 250.00,
-            "estoque": 15,
-            "capa": "assets/banner.jpg",
-            "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
-        }
-    ],
-    "usuario": [
-        {
-            "id": 1,
-            "nome": "erick",
-            "email": "erick@email.com",
-            "senha": "123senac123"
-        }
-    ],
-    "pedido": [
-        {
-            "id": 1,
-            "livroId": 1,
-            "usuarioId": 1,
-            "quantidade": 10,
-            "valor": 2500.00
-        }
-    ]
+  "livro": [
+    {
+      "id": "1",
+      "titulo": "código limpo",
+      "autor": " Robert C. Martin",
+      "editora": "Alta Books",
+      "valor": 250,
+      "estoque": 10,
+      "capa": "assets/banner.jpg",
+      "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
+    },
+    {
+      "id": "2",
+      "titulo": "limpo",
+      "autor": " Robert C. Martin",
+      "editora": "Alta Books",
+      "valor": 250,
+      "estoque": 15,
+      "capa": "assets/banner.jpg",
+      "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
+    }
+  ],
+  "usuario": [
+    {
+      "id": "1",
+      "nome": "erick",
+      "email": "erick@email.com",
+      "senha": "123senac123"
+    },
+    {
+      "id": "51f4",
+      "nome": "Gabriel Antonio Dos Santos",
+      "email": "gabriel@email.com",
+      "senha": "123senac123"
+    },
+    {
+      "id": "0b25",
+      "nome": "Evandro ",
+      "email": "evandro@email.com",
+      "senha": "123senac123"
+    }
+  ],
+  "pedido": [
+    {
+      "id": "1",
+      "livroId": 1,
+      "usuarioId": 1,
+      "quantidade": 10,
+      "valor": 2500
+    }
+  ]
 }
