@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Livro } from '../types/livro';
 import { Usuario } from '../types/usuario';
 
@@ -11,6 +11,9 @@ export class LivrariaService {
   private readonly livro = 'http://localhost:3000/livro';
   private readonly usuario = 'http://localhost:3000/usuario';
   private readonly pedido = 'http://localhost:3000/pedido';
+  private baseUrl = 'http://localhost:3000';
+  private usuarioLogadoSubject = new BehaviorSubject<Usuario | null>(this.getUsuarioLocal());
+  public usuarioLogado$ = this.usuarioLogadoSubject.asObservable();
 
   constructor(private http: HttpClient) { }
 
@@ -25,4 +28,34 @@ visualizarLivro(id: number): Observable<Livro> {
 validarLogin(email: string, senha: string):Observable<Usuario[]>{
   return this.http.get<Usuario[]>(`${this.usuario}?email=${email}&senha=${senha}`);
 }
+
+login(usuario: Usuario): void{
+  localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+  this.usuarioLogadoSubject.next(usuario);
+}
+
+logout(): void {
+  localStorage.removeItem('usuarioLogado');
+  this.usuarioLogadoSubject.next(null);
+}
+
+getUsuarioLocal(): Usuario | null {
+  if (typeof window !== 'undefined' && localStorage.getItem('usuarioLogado')) {
+    const dados = localStorage.getItem('usuarioLogado');
+    return dados ? JSON.parse(dados) : null;
+  }
+  return null;
+}
+
+
+getUsuarioLogado(): Usuario | null {
+  return this.usuarioLogadoSubject.value;
+}
+
+estaLogado(): boolean{
+  return this.getUsuarioLogado() !== null;
+}
+
+
+
 }

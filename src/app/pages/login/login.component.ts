@@ -26,15 +26,17 @@ export class LoginComponent {
 
   erroLogin: boolean = false;
 
-fazerLogin() {
-  this.service.validarLogin(this.usuario.email, this.usuario.senha).subscribe(res => {
-    if (res.length > 0) {
-      this.erroLogin = false;
-      this.router.navigate(['/conteudo']);
-    } else {
-      this.erroLogin = true; 
-    }
-  });
-  }
+  fazerLogin() {
+    this.service.validarLogin(this.usuario.email, this.usuario.senha).subscribe(res => {
+      if (res.length > 0) {
+        const usuarioLogado = res[0];
+        this.service.login(usuarioLogado); 
+        this.erroLogin = false;
+        this.router.navigate(['/conteudo']);
+      } else {
+        this.erroLogin = true;
+      }
+    });
 
+}
 }
