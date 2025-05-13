@@ -1,0 +1,13 @@
+<div class="alterar-container">
+    <h2>Meus Dados</h2>
+  
+    <form (ngSubmit)="salvarAlteracoes()">
+      <input type="text" [(ngModel)]="usuario.nome" name="nome" placeholder="Nome completo" required>
+      <input type="email" [(ngModel)]="usuario.email" name="email" placeholder="E-mail" required>
+      <input type="password" [(ngModel)]="usuario.senha" name="senha" placeholder="Senha" required>
+      
+      <button type="submit">Salvar alterações</button>
+    </form>
+  
+    <p *ngIf="mensagem" class="mensagem-sucesso">{{ mensagem }}</p>
+</div>

@@ -4,6 +4,7 @@ import { ConteudoComponent } from './pages/conteudo/conteudo.component';
 import { VisualizarLivroComponent } from './pages/visualizar-livro/visualizar-livro.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
+import { AlterarDadosComponent } from './pages/alterar-dados/alterar-dados.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,12 @@ export const routes: Routes = [
     path: 'carrinho/:id',
     component: CadastroComponent
   },
+
+  { 
+    path: 'usuario/:id', 
+    component: AlterarDadosComponent
+  },
+
   {
     path: 'carrinho/:id/:idUsuario',
     component: CarrinhoComponent
@@ -34,6 +41,7 @@ export const routes: Routes = [
     path: 'cadastro',
     component: CadastroComponent
   },
+
   {
     path: '**',
     redirectTo: 'conteudo',
