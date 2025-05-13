@@ -65,13 +65,16 @@
     font-family: var(--fonte-titulo);
 }
 
+
 .container .card #right > button {
     border: none;
     background-color: var(--destaques);
-    color: white;
     border-radius: 5px;
-    width: 510px;
-    height: 75px;
-    font-size: 25px;
     cursor: pointer;
+}
+
+.container .card #right > button img {
+    width: 55px;
+    height: 55px;
+    padding: 10px 10px 5px 5px;
 }

@@ -6,7 +6,7 @@
             "autor": " Robert C. Martin",
             "editora": "Alta Books",
             "valor": 250.00,
-            "estoque": 15,
+            "estoque": 10,
             "capa": "assets/banner.jpg",
             "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
         },
