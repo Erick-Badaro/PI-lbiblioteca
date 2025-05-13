@@ -3,36 +3,39 @@ import { LoginComponent } from './pages/login/login.component';
 import { ConteudoComponent } from './pages/conteudo/conteudo.component';
 import { VisualizarLivroComponent } from './pages/visualizar-livro/visualizar-livro.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: ConteudoComponent,
-    },
-    {
-        path: 'conteudo',
-        component: ConteudoComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
-        path: 'visualizar/:id',
-        component: VisualizarLivroComponent
-    },
-    
-    {
-        path: 'cadastro',
-        component: CadastroComponent
-    },
-    
-    
-    {
-        path: '**',
-        redirectTo: 'conteudo',
-    },
-
-    
-
+  {
+    path: '',
+    component: ConteudoComponent,
+  },
+  {
+    path: 'conteudo',
+    component: ConteudoComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'visualizar/:id',
+    component: VisualizarLivroComponent
+  },
+  {
+    path: 'carrinho/:id',
+    component: CadastroComponent
+  },
+  {
+    path: 'carrinho/:id/:idUsuario',
+    component: CarrinhoComponent
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'conteudo',
+  },
 ];

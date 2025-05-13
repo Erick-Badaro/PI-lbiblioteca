@@ -11,7 +11,7 @@
       </span>
       <div class="sinopse">{{livroEscolhido.sinopse}}</div>
       <p>Valor: R${{livroEscolhido.valor}}<br><br>Quantidade estoque: {{livroEscolhido.estoque}}</p>
-      <button class="btn"><img src="shopping-cart.svg" alt="carrinho"></button>
+      <button class="btn" [routerLink]="['/carrinho', livroEscolhido.id, idUsuario]"><img src="shopping-cart.svg" alt="carrinho"></button>
     </div>
   </div>
 </div>
