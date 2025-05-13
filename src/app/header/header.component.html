@@ -1,11 +1,25 @@
 <div class="container">
-    <!-- <a routerLink="/conteudo"><h1>Alexandria</h1></a> -->
     <h1><a routerLink="/conteudo">Alexandria</a></h1>
     <ul>
-        <li><a>Livros</a></li>
+      <li><a>Livros</a></li>
+  
+      <ng-container *ngIf="!usuario; else logado">
         <span>
-            <img src="log-in.svg" alt="">
-            <li><a routerLink="/login">Entrar/cadastrar</a></li>
+          <img src="log-in.svg" alt="">
+          <li><a routerLink="/login">Entrar/Cadastrar</a></li>
         </span>
+      </ng-container>
+  
+      <ng-template #logado>
+        <span>
+          <img src="user.svg" alt="">
+          <li>
+            <a>Olá, {{ usuario?.nome }}</a> |
+            <a style="cursor: pointer;" (click)="logout()">Sair</a>
+          </li>
+        </span>
+      </ng-template>
+  
     </ul>
-</div>
+  </div>
+  
