@@ -25,5 +25,4 @@ visualizarLivro(id: number): Observable<Livro> {
 validarLogin(email: string, senha: string):Observable<Usuario[]>{
   return this.http.get<Usuario[]>(`${this.usuario}?email=${email}&senha=${senha}`);
 }
-
 }
