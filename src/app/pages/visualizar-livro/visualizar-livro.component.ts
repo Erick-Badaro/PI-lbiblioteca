@@ -40,7 +40,7 @@ export class VisualizarLivroComponent implements OnInit {
       return;
     }
   
-    if (this.pedido.qtd > this.livroEscolhido.estoque || this.pedido.qtd <= 0) {
+    if (this.pedido.qtd > this.livroEscolhido.estoque || this.pedido.qtd <= 0  || this.pedido.qtd == null) {
       alert('Quantidade informada maior que o estoque disponível!');
       return;
     }

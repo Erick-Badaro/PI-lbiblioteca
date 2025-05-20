@@ -88,6 +88,12 @@
       "livroId": "2",
       "usuarioId": "51f4",
       "valor": 0
+    },
+    {
+      "id": "0066",
+      "livroId": "2",
+      "usuarioId": "51f4",
+      "valor": null
     }
   ]
 }
