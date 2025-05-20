@@ -37,7 +37,7 @@ export class LoginComponent {
         this.erroLogin = true;
         setTimeout(() => {
           this.erroLogin = false;
-        }, 3000);
+        }, 5000);
       }
 
       

@@ -4,10 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Livro } from '../../core/types/livro';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Pedido } from '../../core/types/pedido';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-visualizar-livro',
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './visualizar-livro.component.html',
   styleUrl: './visualizar-livro.component.css'
 })
@@ -18,6 +19,9 @@ export class VisualizarLivroComponent implements OnInit {
   livroEscolhido!: Livro;
   idUsuario!: string;
   pedido: Pedido = {} as Pedido;
+  errLogin: boolean = false
+  errQtd: boolean = false
+  correctItem: boolean = false
 
   ngOnInit(): void {
     const usuario = this.livraria.getUsuarioLogado(); 
@@ -36,12 +40,18 @@ export class VisualizarLivroComponent implements OnInit {
 
   submeter() {
     if (!this.livraria.estaLogado()) {
-      alert('Você precisa estar logado para adicionar ao carrinho!');
+      this.errLogin = true
+      setTimeout(() => {
+        this.errLogin = false;
+      }, 3000);
       return;
     }
   
     if (this.pedido.qtd > this.livroEscolhido.estoque || this.pedido.qtd <= 0  || this.pedido.qtd == null) {
-      alert('Quantidade informada maior que o estoque disponível!');
+      this.errQtd = true;
+      setTimeout(() => {
+        this.errQtd = false
+      }, 5000)
       return;
     }
   
@@ -53,7 +63,10 @@ export class VisualizarLivroComponent implements OnInit {
     this.pedido.valor = this.pedido.qtd * this.livroEscolhido.valor;
   
     this.livraria.incluirPedido(this.pedido).subscribe(() => {
-      alert('Foi pro carrinho!');
+      this.correctItem = true
+      setTimeout(() => {
+        this.correctItem =false
+      }, 5000)
     });
   }
   
