@@ -26,22 +26,24 @@ export class LoginComponent {
 
   erroLogin: boolean = false;
 
-  fazerLogin() {
-    this.service.validarLogin(this.usuario.email, this.usuario.senha).subscribe(res => {
-      if (res.length > 0) {
-        const usuarioLogado = res[0];
-        this.service.login(usuarioLogado); 
-        this.erroLogin = false;
-        this.router.navigate(['/conteudo']);
-      } else {
-        this.erroLogin = true;
-        setTimeout(() => {
-          this.erroLogin = false;
-        }, 5000);
-      }
+fazerLogin() {
+  if (!this.usuario.email || !this.usuario.senha) {
+    this.erroLogin = true;
+    setTimeout(() => this.erroLogin = false, 3000);
+    return;
+  }
 
-      
-    });
-
+  this.service.validarLogin(this.usuario.email, this.usuario.senha).subscribe(res => {
+    if (res.length === 1) {
+      const usuarioLogado = res[0];
+      this.service.login(usuarioLogado); 
+      this.erroLogin = false;
+      this.router.navigate(['/conteudo']);
+    } else {
+      this.erroLogin = true;
+      setTimeout(() => this.erroLogin = false, 3000);
+    }
+  });
 }
+
 }

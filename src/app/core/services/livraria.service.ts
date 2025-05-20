@@ -63,7 +63,7 @@ incluir(usuario: Usuario): Observable<Usuario>{
   return this.http.post<Usuario>(this.usuario, usuario)
 }
 
-buscarPorId(id: number): Observable<Usuario> {
+buscarPorId(id: string): Observable<Usuario> {
   return this.http.get<Usuario>(`${this.usuario}/${id}`);
 }
 

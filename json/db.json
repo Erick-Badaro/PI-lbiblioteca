@@ -23,18 +23,6 @@
   ],
   "usuario": [
     {
-      "id": "1",
-      "nome": "",
-      "email": "erick@email.com",
-      "senha": "123senac123"
-    },
-    {
-      "id": "51f4",
-      "nome": "Gabriel Antonio Dos Santos",
-      "email": "gabriel@email.com",
-      "senha": "123senac123"
-    },
-    {
       "id": "0b25",
       "nome": "Evandro ",
       "email": "evandro@email.com",
@@ -51,6 +39,18 @@
       "nome": "Luiz Espalha",
       "email": "luizespalhalixo@gmail.com",
       "senha": "catapimbas"
+    },
+    {
+      "id": "e99c",
+      "nome": "Erick Badaró",
+      "email": "erick@email.com",
+      "senha": "123senac123"
+    },
+    {
+      "id": "a328",
+      "nome": "Brabo ",
+      "email": "brabo@gmail.com",
+      "senha": "123senac123"
     }
   ],
   "pedido": [
