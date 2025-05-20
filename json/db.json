@@ -67,6 +67,27 @@
       "livroId": "1",
       "usuarioId": "51f4",
       "valor": 250
+    },
+    {
+      "id": "d145",
+      "qtd": 2,
+      "livroId": "2",
+      "usuarioId": "51f4",
+      "valor": 500
+    },
+    {
+      "id": "01e7",
+      "qtd": 0,
+      "livroId": "2",
+      "usuarioId": "51f4",
+      "valor": 0
+    },
+    {
+      "id": "2457",
+      "qtd": 0,
+      "livroId": "2",
+      "usuarioId": "51f4",
+      "valor": 0
     }
   ]
 }

@@ -20,37 +20,42 @@ export class VisualizarLivroComponent implements OnInit {
   pedido: Pedido = {} as Pedido;
 
   ngOnInit(): void {
-    if (typeof window !== 'undefined') {
-      const usuario = localStorage.getItem('usuario');
-      if (usuario) {
-        const userObj = JSON.parse(usuario) as { id: string };
-        this.idUsuario = userObj.id;
-      }
+    const usuario = this.livraria.getUsuarioLogado(); 
+    if (usuario) {
+      this.idUsuario = String(usuario.id);
+    } else {
+      this.idUsuario = ''; 
     }
+  
     this.idLivro = Number(this.router.snapshot.paramMap.get('id'));
     this.livraria.visualizarLivro(this.idLivro).subscribe((livro) => {
       this.livroEscolhido = livro;
     });
   }
+  
 
-  submeter() { 
-    if (!this.idUsuario) {
-      alert('precisa de logar no site para adicionar o livro ao carrinho!')
+  submeter() {
+    if (!this.livraria.estaLogado()) {
+      alert('Você precisa estar logado para adicionar ao carrinho!');
       return;
     }
-
-    if (this.pedido.qtd > this.livroEscolhido.estoque) {
+  
+    if (this.pedido.qtd > this.livroEscolhido.estoque || this.pedido.qtd <= 0) {
       alert('Quantidade informada maior que o estoque disponível!');
       return;
     }
-
+  
+    const usuario = this.livraria.getUsuarioLogado();
+    if (!usuario) return; 
+  
     this.pedido.livroId = this.livroEscolhido.id;
-    this.pedido.usuarioId = this.idUsuario;
+    this.pedido.usuarioId = String(usuario.id);
     this.pedido.valor = this.pedido.qtd * this.livroEscolhido.valor;
-
+  
     this.livraria.incluirPedido(this.pedido).subscribe(() => {
-      alert('foi pro carrinho!')
-    })
+      alert('Foi pro carrinho!');
+    });
   }
+  
 
 }
