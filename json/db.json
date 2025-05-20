@@ -60,6 +60,13 @@
       "usuarioId": 1,
       "quantidade": 10,
       "valor": 2500
+    },
+    {
+      "id": "fd14",
+      "qtd": 1,
+      "livroId": "1",
+      "usuarioId": "51f4",
+      "valor": 250
     }
   ]
 }

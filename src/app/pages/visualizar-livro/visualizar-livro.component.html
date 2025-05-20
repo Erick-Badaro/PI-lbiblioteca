@@ -11,7 +11,10 @@
       </span>
       <div class="sinopse">{{livroEscolhido.sinopse}}</div>
       <p>Valor: R${{livroEscolhido.valor}}<br><br>Quantidade estoque: {{livroEscolhido.estoque}}</p>
-      <button class="btn" [routerLink]="['/carrinho', livroEscolhido.id, idUsuario]"><img src="shopping-cart.svg" alt="carrinho"></button>
+      <form>
+        <input type="number" [(ngModel)] = "pedido.qtd" required placeholder="Informe a quantidade..." name="quantidade">
+        <button class="btn" (click)="submeter()"><img src="shopping-cart.svg" alt="carrinho" id="car"></button>
+      </form>
     </div>
   </div>
 </div>

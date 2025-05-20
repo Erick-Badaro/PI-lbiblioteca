@@ -60,21 +60,41 @@
     font-size: 20px;
 }
 
-.container .card #right > p {
+.container .card #right>p {
     font-size: 25px;
     font-family: var(--fonte-titulo);
 }
 
 
-.container .card #right > button {
+.btn {
     border: none;
     background-color: var(--destaques);
     border-radius: 5px;
     cursor: pointer;
 }
 
-.container .card #right > button img {
-    width: 55px;
-    height: 55px;
+#car {
+    width: 28px;
+    height: 28px;
     padding: 10px 10px 5px 5px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+form input {
+    border: 1px solid var(--destaques);
+    border-radius: 50px;
+    height: 25px;
+    padding: 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
