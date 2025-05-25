@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { Livro } from '../types/livro';
 import { Usuario } from '../types/usuario';
+import { Pedido } from '../types/pedido';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ import { Usuario } from '../types/usuario';
 export class LivrariaService {
   private readonly livro = 'http://localhost:3000/livro';
   private readonly usuario = 'http://localhost:3000/usuario';
-  private readonly pedido = 'http://localhost:3000/pedido';
+  private readonly pedidoUrl = 'http://localhost:3000/pedido';
   private baseUrl = 'http://localhost:3000';
   private usuarioLogadoSubject = new BehaviorSubject<Usuario | null>(this.getUsuarioLocal());
   public usuarioLogado$ = this.usuarioLogadoSubject.asObservable();
@@ -62,7 +63,7 @@ incluir(usuario: Usuario): Observable<Usuario>{
   return this.http.post<Usuario>(this.usuario, usuario)
 }
 
-buscarPorId(id: number): Observable<Usuario> {
+buscarPorId(id: string): Observable<Usuario> {
   return this.http.get<Usuario>(`${this.usuario}/${id}`);
 }
 
@@ -70,7 +71,9 @@ atualizar(usuario: Usuario): Observable<Usuario> {
   return this.http.put<Usuario>(`${this.usuario}/${usuario.id}`, usuario);
 }
 
-
+incluirPedido(pedido : Pedido): Observable<Pedido> {
+  return this.http.post<Pedido>(this.pedidoUrl, pedido);
+}
 
 
 }

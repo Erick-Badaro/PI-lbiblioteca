@@ -23,7 +23,7 @@ export class AlterarDadosComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id = String(this.route.snapshot.paramMap.get('id'));
     this.service.buscarPorId(id).subscribe(usuario => {
       this.usuario = usuario;
     });
@@ -31,7 +31,7 @@ export class AlterarDadosComponent implements OnInit {
 
   salvarAlteracoes() {
     this.service.atualizar(this.usuario).subscribe(() => {
-      this.mensagem = 'Dados atualizados com sucesso!';
+      this.mensagem = 'Dados atualizados com sucesso! Realize novamente o Login';
       setTimeout(() => this.mensagem = '', 3000);
     }, erro => {
       console.error('Erro ao atualizar dados:', erro);
