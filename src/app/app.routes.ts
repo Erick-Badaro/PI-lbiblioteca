@@ -5,6 +5,7 @@ import { VisualizarLivroComponent } from './pages/visualizar-livro/visualizar-li
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { AlterarDadosComponent } from './pages/alterar-dados/alterar-dados.component';
+import { LivrosComponent } from './livros/livros.component';
 
 export const routes: Routes = [
   {
@@ -19,6 +20,12 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
+
+  {
+    path:'livros',
+    component: LivrosComponent
+  },
+
   {
     path: 'visualizar/:id',
     component: VisualizarLivroComponent

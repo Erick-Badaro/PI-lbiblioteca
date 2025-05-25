@@ -5,26 +5,101 @@
       "titulo": "código limpo",
       "autor": " Robert C. Martin",
       "editora": "Alta Books",
-      "valor": 250,
+      "valor": 72.90,
       "estoque": 10,
-      "capa": "assets/banner.jpg",
-      "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
+      "capa": "assets/codigoLimpo.jpg",
+      "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho.",
+      "genero": "programação"
     },
+
     {
       "id": "2",
-      "titulo": "limpo",
-      "autor": " Robert C. Martin",
+      "titulo": "Desenvolvimento Ágil Limpo",
+      "autor": "Robert C. Martin",
       "editora": "Alta Books",
-      "valor": 250,
+      "valor": 67,
+      "estoque": 8,
+      "capa": "assets/desenvolvimentoAgilLimpo.jpg",
+      "sinopse": "Desenvolvimento Ágil Limpo , de Robert C. Martin, é uma obra que aprofunda os valores e princípios do desenvolvimento ágil, revisitando a origem do Manifesto Ágil e esclarecendo mal-entendidos ao longo dos anos. O livro é direcionado tanto para programadores quanto para não programadores, buscando uma compreensão mais completa e precisa da agilidade.",
+      "genero": "programação"
+    },
+
+    {
+      "id": "3",
+      "titulo": "Arquitetura Limpa",
+      "autor": "Robert C. Martin",
+      "editora": "Alta Books",
+      "valor": 72,
+      "estoque": 6,
+      "capa": "assets/arquiteturaLimpa.webp",
+      "sinopse": "Arquitetura Limpa é um guia para a construção de sistemas de software robustos, flexíveis e fáceis de manter. A sinopse da obra destaca a importância de uma arquitetura que permita que o código seja facilmente adaptado a mudanças nas necessidades do negócio e às evoluções tecnológicas. A obra também enfatiza a importância de separar as responsabilidades em camadas, garantindo a independência entre elas. ",
+      "genero": "programação"
+    },
+
+    {
+      "id": "4",
+      "titulo": "Craftsmanship Limpo",
+      "autor": "Robert C. Martin",
+      "editora": "Alta Books",
+      "valor": 77,
+      "estoque": 12,
+      "capa": "assets/craftsmanshipLimpo.webp",
+      "sinopse": "Este livro explora o conceito de 'Software Craftsmanship', ou seja, a arte de escrever software com excelência. Robert C. Martin mostra como desenvolver com ética, responsabilidade e compromisso com a qualidade e o cliente.",
+      "genero": "programação"
+    },
+
+    {
+      "id": "5",
+      "titulo": "O Codificador Limpo",
+      "autor": "Robert C. Martin",
+      "editora": "Alta Books",
+      "valor": 78,
       "estoque": 15,
-      "capa": "assets/banner.jpg",
-      "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho."
+      "capa": "assets/oCodificadorLimpo.webp",
+      "sinopse": "Mais do que programar bem, ser um profissional envolve disciplina e ética. Neste livro, Uncle Bob compartilha conselhos práticos e experiências para quem deseja se tornar um verdadeiro profissional de software.",
+      "genero": "programação"
+    },
+
+    {
+      "id": "6",
+      "titulo": "Da Terra à Lua",
+      "autor": "Júlio Verne",
+      "editora": "Zahar",
+      "valor": 45,
+      "estoque": 12,
+      "capa": "assets/daTerraALua.webp",
+      "sinopse": "Uma incrível aventura científica que narra a tentativa ousada de lançar um projétil tripulado à Lua logo após a Guerra Civil Americana. Mistura ciência, imaginação e humor no estilo único de Júlio Verne.",
+      "genero": "ficção científica"
+    },
+    {
+      "id": "7",
+      "titulo": "A Volta ao Mundo em 80 Dias",
+      "autor": "Júlio Verne",
+      "editora": "Zahar",
+      "valor": 50,
+      "estoque": 15,
+      "capa": "assets/voltaAoMundo.webp",
+      "sinopse": "Phileas Fogg aposta que pode dar a volta ao mundo em apenas 80 dias. Acompanhe essa jornada cheia de desafios, culturas e reviravoltas com seu fiel companheiro Passepartout.",
+      "genero": "aventura"
+    },
+    {
+      "id": "8",
+      "titulo": "Viagem ao Centro da Terra",
+      "autor": "Júlio Verne",
+      "editora": "Zahar",
+      "valor": 55,
+      "estoque": 9,
+      "capa": "assets/viagemCentroTerra.jpg",
+      "sinopse": "O professor Lidenbrock descobre um antigo manuscrito que o leva a uma expedição pelo interior da Terra. Um clássico da ficção científica com descobertas extraordinárias.",
+      "genero": "ficção científica"
     }
+    
+    
   ],
   "usuario": [
     {
       "id": "1",
-      "nome": "",
+      "nome": "Erick Badaró",
       "email": "erick@email.com",
       "senha": "123senac123"
     },
