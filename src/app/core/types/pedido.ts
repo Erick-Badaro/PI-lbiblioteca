@@ -1,5 +1,5 @@
 export interface Pedido {
-    id?: number,
+    id?: string,
     livroId: number | undefined,
     usuarioId: string | undefined,
     qtd: number,

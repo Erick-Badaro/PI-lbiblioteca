@@ -79,6 +79,8 @@ pedido(usuarioId: string | null): Observable<Pedido[]> {
   return this.http.get<Pedido[]>(`${this.pedidoUrl}?usuarioId=${usuarioId}`);
 }
 
-
+excluirPedido(id: string):Observable <Pedido> {
+  return this.http.delete<Pedido>(this.pedidoUrl + `/${id}`)
+}
 
 }

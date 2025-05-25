@@ -13,35 +13,35 @@ import { Livro } from '../../core/types/livro';
 })
 export class CarrinhoComponent implements OnInit {
   constructor(private livraria: LivrariaService, private router: ActivatedRoute) { }
-  teste: Pedido[] = [];
+  pedido: Pedido[] = [];
   iduser!: string | null;
   livro: Livro[] = [];
   carrinho: carrinho[] = [];
-  pedidoItem!: number | null;
 
   ngOnInit(): void {
-    this.iduser = this.router.snapshot.paramMap.get('id');
-
     this.iduser = this.router.snapshot.paramMap.get('id');
 
     this.livraria.pedido(this.iduser).subscribe((pedido) => {
       this.teste = pedido;
 
-      for (let i = 0; i < this.teste.length; i++) {
-        
-
-        this.livraria.visualizarLivro(this.teste[i].livroId).subscribe((livro) => {
-          this.carrinho[i] = {
+      for (let i = 0; i < this.pedido.length; i++) {
+        this.livraria.visualizarLivro(this.pedido[i].livroId).subscribe((livro) => {
+          this.carrinho.push({
+            id: this.pedido[i].id,
             titulo: livro.titulo,
             capa: livro.capa,
-            qtd: this.teste[i].qtd,
-            valor: this.teste[i].valor
-          };
+            qtd: this.pedido[i].qtd,
+            valor: this.pedido[i].valor
+          });
         });
       }
-    });
-
+    }); 
     console.log(this.carrinho)
-
   }
+  excluir(id: string) {
+    this.livraria.excluirPedido(id).subscribe(() => {
+      window.location.reload();
+    })
+  }
+
 }

@@ -3,18 +3,18 @@
         @for (pedido of carrinho; track pedido) {
         <div class="pedido">
             <span>
-                <img src="/{{ pedido.capa }}" alt="">
+                <img src="/{{ pedido.capa }}" alt="capa">
                 <span>
                     <p>{{ pedido.titulo }}</p>
                     <span>
                         <p>Qtd: {{ pedido.qtd }}x</p>
-                        <p>R${{ pedido.valor }}</p>
+                        <p>Valor: R${{ pedido.valor }}</p>
                     </span>
                 </span>
             </span>
             <span>
                 <button>Alterar</button>
-                <button>Excluir</button>
+                <button (click)="excluir(pedido.id!)">Excluir</button>
             </span>
         </div>
         }

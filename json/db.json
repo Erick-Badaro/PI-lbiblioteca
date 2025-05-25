@@ -5,13 +5,12 @@
       "titulo": "código limpo",
       "autor": " Robert C. Martin",
       "editora": "Alta Books",
-      "valor": 72.90,
+      "valor": 72.9,
       "estoque": 10,
       "capa": "assets/codigoLimpo.jpg",
       "sinopse": "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de software. Com Código Limpo, Robert C. Martin ensina os princípios, padrões e boas práticas para escrever código legível, eficiente e de fácil manutenção. O livro mostra como transformar um código confuso em um código limpo por meio de exemplos práticos, com foco em agilidade e desenvolvimento sustentável. Essencial para desenvolvedores que buscam profissionalismo e qualidade no seu trabalho.",
       "genero": "programação"
     },
-
     {
       "id": "2",
       "titulo": "Desenvolvimento Ágil Limpo",
@@ -23,7 +22,6 @@
       "sinopse": "Desenvolvimento Ágil Limpo , de Robert C. Martin, é uma obra que aprofunda os valores e princípios do desenvolvimento ágil, revisitando a origem do Manifesto Ágil e esclarecendo mal-entendidos ao longo dos anos. O livro é direcionado tanto para programadores quanto para não programadores, buscando uma compreensão mais completa e precisa da agilidade.",
       "genero": "programação"
     },
-
     {
       "id": "3",
       "titulo": "Arquitetura Limpa",
@@ -35,7 +33,6 @@
       "sinopse": "Arquitetura Limpa é um guia para a construção de sistemas de software robustos, flexíveis e fáceis de manter. A sinopse da obra destaca a importância de uma arquitetura que permita que o código seja facilmente adaptado a mudanças nas necessidades do negócio e às evoluções tecnológicas. A obra também enfatiza a importância de separar as responsabilidades em camadas, garantindo a independência entre elas. ",
       "genero": "programação"
     },
-
     {
       "id": "4",
       "titulo": "Craftsmanship Limpo",
@@ -47,7 +44,6 @@
       "sinopse": "Este livro explora o conceito de 'Software Craftsmanship', ou seja, a arte de escrever software com excelência. Robert C. Martin mostra como desenvolver com ética, responsabilidade e compromisso com a qualidade e o cliente.",
       "genero": "programação"
     },
-
     {
       "id": "5",
       "titulo": "O Codificador Limpo",
@@ -59,7 +55,6 @@
       "sinopse": "Mais do que programar bem, ser um profissional envolve disciplina e ética. Neste livro, Uncle Bob compartilha conselhos práticos e experiências para quem deseja se tornar um verdadeiro profissional de software.",
       "genero": "programação"
     },
-
     {
       "id": "6",
       "titulo": "Da Terra à Lua",
@@ -93,12 +88,9 @@
       "sinopse": "O professor Lidenbrock descobre um antigo manuscrito que o leva a uma expedição pelo interior da Terra. Um clássico da ficção científica com descobertas extraordinárias.",
       "genero": "ficção científica"
     }
-    
-    
   ],
   "usuario": [
     {
-<<<<<<< HEAD
       "id": "1",
       "nome": "Erick Badaró",
       "email": "erick@email.com",
@@ -111,8 +103,6 @@
       "senha": "123senac123"
     },
     {
-=======
->>>>>>> b404f0e7242856e3d5b4e3a2b255b01efa3d30c1
       "id": "0b25",
       "nome": "Evandro ",
       "email": "evandro@email.com",
@@ -150,13 +140,6 @@
     }
   ],
   "pedido": [
-    {
-      "id": "1",
-      "livroId": 1,
-      "usuarioId": 1,
-      "quantidade": 10,
-      "valor": 2500
-    },
     {
       "id": "fd14",
       "qtd": 1,
@@ -276,25 +259,11 @@
       "valor": 250
     },
     {
-      "id": "f744",
-      "qtd": 1,
-      "livroId": "1",
-      "usuarioId": "b85e",
-      "valor": 250
-    },
-    {
-      "id": "510f",
-      "qtd": 10,
-      "livroId": "2",
-      "usuarioId": "b85e",
-      "valor": 2500
-    },
-    {
-      "id": "3406",
+      "id": "50d2",
       "qtd": 10,
       "livroId": "1",
       "usuarioId": "b85e",
-      "valor": 2500
+      "valor": 729
     }
   ]
 }
