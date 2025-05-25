@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.center {
+    background-color: var(--fundo-principal);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    gap: 15px;
+}
+
+.pedido {
+    display: flex;
+    gap: 10px;
+}
+
+.pedido > span:nth-child(1) {
+    display: flex;
+    width: 750px;
+    border: 2px solid #d5d5d5;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.pedido > span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pedido > span img {
+    height: 70px;
+    width: 60px;
+    padding: 10px 0 10px 10px;
+}
+
+.pedido > span > span {
+    display: flex;
+    align-items: center;
+    width: calc(750px - 70px);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.pedido > span > span > span {
+    display: flex;
+    gap: 10px;
+}
+
+.pedido > span:nth-child(2) button {
+    border: none;
+    width: 120px;
+    border: 2px solid #d5d5d5;
+    border-radius: 5px;
+    color: white;
+    height: calc(50px - 2.5px);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pedido > span:nth-child(2) button:hover {
+    transform: translateY(-5px);
+}
+
+.pedido > span:nth-child(2) > button:nth-child(1) {
+    background-color: var(--segundaria);
+}
+
+.pedido > span:nth-child(2) > button:nth-child(2) {
+    background-color: #F44336;
+}

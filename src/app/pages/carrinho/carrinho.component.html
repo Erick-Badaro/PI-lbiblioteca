@@ -1,1 +1,22 @@
-<p>carrinho works!</p>
+<div class="container">
+    <div class="center">
+        @for (pedido of carrinho; track pedido) {
+        <div class="pedido">
+            <span>
+                <img src="/{{ pedido.capa }}" alt="">
+                <span>
+                    <p>{{ pedido.titulo }}</p>
+                    <span>
+                        <p>Qtd: {{ pedido.qtd }}x</p>
+                        <p>R${{ pedido.valor }}</p>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <button>Alterar</button>
+                <button>Excluir</button>
+            </span>
+        </div>
+        }
+    </div>
+</div>

@@ -25,17 +25,12 @@ export const routes: Routes = [
   },
   {
     path: 'carrinho/:id',
-    component: CadastroComponent
+    component: CarrinhoComponent
   },
 
   { 
     path: 'usuario/:id', 
     component: AlterarDadosComponent
-  },
-
-  {
-    path: 'carrinho/:id/:idUsuario',
-    component: CarrinhoComponent
   },
   {
     path: 'cadastro',

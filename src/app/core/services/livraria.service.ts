@@ -23,7 +23,7 @@ export class LivrariaService {
     return this.http.get<Livro[]>(this.livro);
   }
 
-visualizarLivro(id: number): Observable<Livro> {
+visualizarLivro(id: number | undefined): Observable<Livro> {
   return this.http.get<Livro>(this.livro + `/${id}`);
 }
 
@@ -74,6 +74,11 @@ atualizar(usuario: Usuario): Observable<Usuario> {
 incluirPedido(pedido : Pedido): Observable<Pedido> {
   return this.http.post<Pedido>(this.pedidoUrl, pedido);
 }
+
+pedido(usuarioId: string | null): Observable<Pedido[]> {
+  return this.http.get<Pedido[]>(`${this.pedidoUrl}?usuarioId=${usuarioId}`);
+}
+
 
 
 }
