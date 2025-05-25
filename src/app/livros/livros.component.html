@@ -1,0 +1,24 @@
+<section class="secao">
+    <h1 class="titulo">Livros Disponíveis</h1>
+  
+    <div class="listaLivros">
+      <div class="livro" *ngFor="let livro of livros">
+        <img [src]="livro.capa" alt="Capa do livro {{ livro.titulo }}" class="capa" />
+  
+        <div class="detalhes">
+          <h2>{{ livro.titulo }}</h2>
+          <p><strong>Autor:</strong> {{ livro.autor }}</p>
+          <p><strong>Editora:</strong> {{ livro.editora }}</p>
+          <p><strong>Valor:</strong> R$ {{ livro.valor | number: '1.2-2' }}</p>
+          <p><strong>Estoque:</strong> {{ livro.estoque }}</p>
+          <p class="sinopse"><strong>Sinopse:</strong> {{ livro.sinopse }}</p>
+  
+          <div class="botoes">
+            <a [routerLink]="['/livros', livro.id]" class="btn visualizar">Visualizar</a>
+            <button class="btn comprar" [disabled]="livro.estoque <= 0">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,0 +1,107 @@
+.secao {
+  padding: 2rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: var(--fonte-titulo);
+  color: var(--primaria);
+}
+
+.listaLivros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.livro {
+  background-color: #fdf8f3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 240px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.livro:hover {
+  transform: scale(1.03);
+}
+
+.capa {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.detalhes {
+  text-align: center;
+  font-family: var(--fonte-texto);
+}
+
+.detalhes h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primaria);
+}
+
+.detalhes p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.sinopse {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.botoes {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: var(--fonte-texto);
+  font-size: 0.85rem;
+}
+
+.visualizar {
+  background-color: var(--primaria);
+  color: white;
+}
+
+.visualizar:hover {
+  background-color: #152d4a;
+}
+
+.comprar {
+  background-color: var(--segundaria);
+  color: white;
+}
+
+.comprar:hover {
+  background-color: #b9931f;
+}
+
+.comprar:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}

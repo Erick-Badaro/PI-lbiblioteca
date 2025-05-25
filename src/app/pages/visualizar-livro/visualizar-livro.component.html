@@ -1,7 +1,7 @@
 <div class="container">
   <div class="card">
     <div id="left">
-      <img src="assets/banner.jpg" alt="capa">
+      <img [src]="livroEscolhido.capa" alt="capa do livro">
     </div>
     <div id="right">
       <span>
@@ -9,6 +9,14 @@
         <p>{{livroEscolhido?.autor}}</p>
         <p>{{livroEscolhido?.editora}}</p>
       </span>
+<<<<<<< HEAD
+      <div class="sinopse">{{livroEscolhido.sinopse}}</div>
+      <p>Valor: R${{livroEscolhido.valor}}<br><br>Quantidade estoque: {{livroEscolhido.estoque}}</p>
+      <button class="btn" [routerLink]="['/carrinho', livroEscolhido.id, idUsuario]"><img src="shopping-cart.svg"
+          alt="carrinho"></button>
+    </div>
+  </div>
+=======
       <div class="sinopse">{{livroEscolhido?.sinopse}}</div>
       <p>Valor: R${{livroEscolhido?.valor}}<br><br>Quantidade estoque: {{livroEscolhido?.estoque}}</p>
       <form>
@@ -26,4 +34,5 @@
 </div>
 <div class="correct-popup" *ngIf="correctItem">
   <p>Item adicionado ao carrinho</p>
+>>>>>>> b404f0e7242856e3d5b4e3a2b255b01efa3d30c1
 </div>
