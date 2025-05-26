@@ -83,4 +83,8 @@ excluirPedido(id: string):Observable <Pedido> {
   return this.http.delete<Pedido>(this.pedidoUrl + `/${id}`)
 }
 
+buscarPeiddo(id: string): Observable<Pedido> {
+  return this.http.get<Pedido>(`${this.pedidoUrl}/${id}`);
+}
+
 }

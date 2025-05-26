@@ -99,7 +99,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-.err-popupLogin {
+#err-popupLogin {
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: #f8d7da;
@@ -111,10 +111,11 @@ input[type=number]::-webkit-outer-spin-button {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    animation: tremular 0.5s ease-in-out forwards;
+    animation: tremular 0.5s ease-in-out;
+    transition: 1s;
   }
 
-  .err-popupQtd {
+  #err-popupQtd {
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: #f8d7da;
@@ -126,10 +127,11 @@ input[type=number]::-webkit-outer-spin-button {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    animation: tremular 0.5s ease-in-out forwards;
+    animation: tremular 0.5s ease-in-out;
+    transition: 1s;
   }
 
-  .correct-popup {
+  #correct-popup {
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: #d4edda; 
@@ -141,7 +143,8 @@ input[type=number]::-webkit-outer-spin-button {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    animation: flutuar 0.5s ease-in-out forwards;
+    animation: flutuar 0.5s ease-in-out;
+    transition: 1s;
   }
   
   @keyframes tremular {
@@ -170,12 +173,15 @@ input[type=number]::-webkit-outer-spin-button {
   @keyframes flutuar {
     0% {
       transform: translateY(0);
+      opacity: 0;
     }
     25% {
       transform: translateY(-5px);
+      opacity: 0.8;
     }
     50% {
       transform: translateY(8px); 
+      opacity: 1;
     }
     75% {
       transform: translateY(-5px);  

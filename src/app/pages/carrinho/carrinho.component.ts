@@ -4,10 +4,11 @@ import { Pedido } from '../../core/types/pedido';
 import { ActivatedRoute } from '@angular/router';
 import { carrinho } from '../../core/types/carrinho';
 import { Livro } from '../../core/types/livro';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carrinho',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './carrinho.component.html',
   styleUrl: './carrinho.component.css'
 })
@@ -17,12 +18,14 @@ export class CarrinhoComponent implements OnInit {
   iduser!: string | null;
   livro: Livro[] = [];
   carrinho: carrinho[] = [];
+  tem: boolean = false
+  sem: boolean = false;
 
   ngOnInit(): void {
     this.iduser = this.router.snapshot.paramMap.get('id');
 
     this.livraria.pedido(this.iduser).subscribe((pedido) => {
-      this.teste = pedido;
+      this.pedido = pedido;
 
       for (let i = 0; i < this.pedido.length; i++) {
         this.livraria.visualizarLivro(this.pedido[i].livroId).subscribe((livro) => {
@@ -35,8 +38,15 @@ export class CarrinhoComponent implements OnInit {
           });
         });
       }
-    }); 
-    console.log(this.carrinho)
+      if(this.pedido.length > 0) {
+        this.tem = true;
+        this.sem = false;
+      } else {
+        this.tem = false;
+        this.sem = true;
+      }
+    });
+
   }
   excluir(id: string) {
     this.livraria.excluirPedido(id).subscribe(() => {

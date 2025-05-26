@@ -134,136 +134,340 @@
     },
     {
       "id": "b85e",
-      "nome": "gabriel",
+      "nome": "gabriel .A",
       "email": "gabriel@gmail.com",
       "senha": "123"
     }
   ],
   "pedido": [
     {
-      "id": "fd14",
+      "id": "eb13",
       "qtd": 1,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 72.9
     },
     {
-      "id": "d145",
+      "id": "d4b3",
       "qtd": 2,
-      "livroId": "2",
-      "usuarioId": "51f4",
-      "valor": 500
-    },
-    {
-      "id": "01e7",
-      "qtd": 0,
-      "livroId": "2",
-      "usuarioId": "51f4",
-      "valor": 0
-    },
-    {
-      "id": "2457",
-      "qtd": 0,
-      "livroId": "2",
-      "usuarioId": "51f4",
-      "valor": 0
-    },
-    {
-      "id": "0066",
-      "livroId": "2",
-      "usuarioId": "51f4",
-      "valor": null
-    },
-    {
-      "id": "c088",
-      "qtd": 1,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 145.8
     },
     {
-      "id": "30f5",
-      "qtd": 1,
+      "id": "8be2",
+      "qtd": 3,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 218.70000000000002
     },
     {
-      "id": "f379",
-      "qtd": 1,
+      "id": "e8d2",
+      "qtd": 4,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 291.6
     },
     {
-      "id": "96a7",
-      "qtd": 1,
+      "id": "449a",
+      "qtd": 5,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 364.5
     },
     {
-      "id": "df46",
-      "qtd": 1,
+      "id": "ec7a",
+      "qtd": 6,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 437.40000000000003
     },
     {
-      "id": "e060",
-      "qtd": 1,
+      "id": "69c5",
+      "qtd": 7,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 510.30000000000007
     },
     {
-      "id": "1de2",
-      "qtd": 1,
+      "id": "cc1a",
+      "qtd": 8,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 583.2
     },
     {
-      "id": "087a",
-      "qtd": 1,
+      "id": "d019",
+      "qtd": 9,
       "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
+      "usuarioId": "b85e",
+      "valor": 656.1
     },
     {
-      "id": "3491",
-      "qtd": 1,
-      "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
-    },
-    {
-      "id": "47ed",
-      "qtd": 1,
-      "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
-    },
-    {
-      "id": "b889",
-      "qtd": 1,
-      "livroId": "1",
-      "usuarioId": "51f4",
-      "valor": 250
-    },
-    {
-      "id": "3b1a",
-      "qtd": 1,
-      "livroId": "2",
-      "usuarioId": "51f4",
-      "valor": 250
-    },
-    {
-      "id": "50d2",
+      "id": "98a6",
       "qtd": 10,
       "livroId": "1",
       "usuarioId": "b85e",
       "valor": 729
+    },
+    {
+      "id": "0795",
+      "qtd": 10,
+      "livroId": "1",
+      "usuarioId": "b85e",
+      "valor": 729
+    },
+    {
+      "id": "999f",
+      "qtd": 10,
+      "livroId": "1",
+      "usuarioId": "b85e",
+      "valor": 729
+    },
+    {
+      "id": "4b89",
+      "qtd": 1,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 67
+    },
+    {
+      "id": "47a0",
+      "qtd": 2,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 134
+    },
+    {
+      "id": "6cec",
+      "qtd": 3,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 201
+    },
+    {
+      "id": "8823",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "5cf1",
+      "qtd": 5,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 335
+    },
+    {
+      "id": "f2d6",
+      "qtd": 6,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 402
+    },
+    {
+      "id": "4b06",
+      "qtd": 7,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 469
+    },
+    {
+      "id": "24fe",
+      "qtd": 8,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 536
+    },
+    {
+      "id": "e879",
+      "qtd": 8,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 536
+    },
+    {
+      "id": "b5f1",
+      "qtd": 8,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 536
+    },
+    {
+      "id": "f690",
+      "qtd": 8,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 536
+    },
+    {
+      "id": "7658",
+      "qtd": 2,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 134
+    },
+    {
+      "id": "4356",
+      "qtd": 1,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 67
+    },
+    {
+      "id": "630f",
+      "qtd": 3,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 201
+    },
+    {
+      "id": "1271",
+      "qtd": 3,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 201
+    },
+    {
+      "id": "6a46",
+      "qtd": 3,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 201
+    },
+    {
+      "id": "4482",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "cfc2",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "f459",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "4a0d",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "6e84",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "df33",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "b5e7",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "14af",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "0166",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "b9e4",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "f6a2",
+      "qtd": 4,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 268
+    },
+    {
+      "id": "ec4d",
+      "qtd": 1,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 67
+    },
+    {
+      "id": "ac53",
+      "qtd": 5,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 335
+    },
+    {
+      "id": "b60e",
+      "qtd": 8,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 536
+    },
+    {
+      "id": "03dd",
+      "qtd": 5,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 335
+    },
+    {
+      "id": "a075",
+      "qtd": 2,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 134
+    },
+    {
+      "id": "fff4",
+      "qtd": 1,
+      "livroId": "2",
+      "usuarioId": "b85e",
+      "valor": 67
+    },
+    {
+      "id": "84ed",
+      "qtd": 1,
+      "livroId": "6",
+      "usuarioId": "b85e",
+      "valor": 45
+    },
+    {
+      "id": "01d6",
+      "qtd": 2,
+      "livroId": "6",
+      "usuarioId": "b85e",
+      "valor": 90
     }
   ]
 }

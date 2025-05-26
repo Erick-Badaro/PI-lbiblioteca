@@ -1,23 +1,48 @@
 <div class="banner">
-    <div class="slogan">
-        <h2>O melhor lugar para encontrar livros de todos os gêneros. Desde clássicos até lançamentos!</h2>
-    </div>
+  <div class="slogan">
+    <h2>O melhor lugar para encontrar livros de todos os gêneros. Desde clássicos até lançamentos!</h2>
+  </div>
 </div>
+<div class="texto">
+  <p>
+    <strong>Bem-vindo à Livraria Alexandria</strong><br>
+    Descubra um universo de histórias, conhecimento e imaginação.<br>
+    Na Livraria Alexandria, cada livro é uma porta aberta para novos mundos.<br><br>
+
+    Aqui você encontra os melhores títulos da literatura nacional e internacional, lançamentos imperdíveis, clássicos inesquecíveis, romances, suspenses, fantasias, biografias, livros técnicos e muito mais — tudo em um só lugar.
+  </p>
+
+  <span class="divisoria"></span>
+
+  <div>
+    <strong>Por que escolher a Alexandria?</strong>
+    <ul>
+      <li>Entrega rápida e segura para todo o Brasil</li>
+      <li>Compra fácil, segura e com diversas formas de pagamento</li>
+      <li>Promoções exclusivas e descontos especiais</li>
+      <li>Catálogo atualizado com milhares de títulos</li>
+    </ul>
+    Seja para aprender, sonhar, se emocionar ou apenas relaxar, temos o livro certo para você.<br>
+    <strong>Explore, leia, viva — porque cada página tem o poder de transformar.</strong>
+  </div>
+</div>
+
+
 <div class="container">
   @for (livro of listaLivro; track livro) {
-    <div class="card">
-        <img src="{{ livro.capa }}" alt="capa">
-        <div class="info">
-          <div class="linha">
-            <span class="label">{{ livro.titulo}}</span>
-            <span class="label">R${{ livro.valor}}</span>
-          </div>
-          <div class="linha">
-            <span class="label">{{ livro.autor}}</span>
-            <span class="label">{{ livro.editora}}</span>
-          </div>
-        </div>
-        <button class="btn" [routerLink]="['/visualizar', livro.id]">Saber mais</button>
+  <div class="card">
+    <img src="{{ livro.capa }}" alt="capa">
+    <div class="info">
+      <div class="linha">
+        <span class="label">{{ livro.titulo}}</span>
+        <span class="label">R${{ livro.valor}}</span>
+      </div>
+      <div class="linha">
+        <span class="label">{{ livro.autor}}</span>
+        <span class="label">{{ livro.editora}}</span>
+      </div>
     </div>
+    <button class="btn" [routerLink]="['/visualizar', livro.id]">Saber mais</button>
+  </div>
   }
 </div>
