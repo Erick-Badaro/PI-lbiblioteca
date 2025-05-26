@@ -43,6 +43,9 @@
 .detalhes {
   text-align: center;
   font-family: var(--fonte-texto);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1
 }
 
 .detalhes h2 {
@@ -61,10 +64,13 @@
   font-size: 0.85rem;
   margin-top: 0.5rem;
   color: #666;
+  max-height: 80px; 
+  overflow-y: auto; 
+  margin-bottom: 1rem;
 }
 
 .botoes {
-  margin-top: 1rem;
+  margin-top: auto;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
