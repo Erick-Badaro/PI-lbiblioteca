@@ -215,6 +215,12 @@
       "nome": "gabriel",
       "email": "gabriel",
       "senha": "123"
+    },
+    {
+      "id": "ef62",
+      "nome": "Antedeguemon",
+      "email": "erick@email.com",
+      "senha": "123senac123"
     }
   ],
   "pedido": [
