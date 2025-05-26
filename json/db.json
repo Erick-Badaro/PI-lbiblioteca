@@ -87,7 +87,130 @@
       "capa": "assets/viagemCentroTerra.jpg",
       "sinopse": "O professor Lidenbrock descobre um antigo manuscrito que o leva a uma expedição pelo interior da Terra. Um clássico da ficção científica com descobertas extraordinárias.",
       "genero": "ficção científica"
+    },
+
+    {
+      "id": "9",
+      "titulo": "A Guerra dos Tronos",
+      "autor": "George R. R. Martin",
+      "editora": "Suma",
+      "valor": 59.90,
+      "estoque": 15,
+      "capa": "assets/guerraDosTronos.png",
+      "sinopse": "O livro narra as lutas dinásticas entre famílias nobres para controlar o Trono de Ferro em Westeros."
+    },
+    {
+      "id": "10",
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "autor": "J.K. Rowling",
+      "editora": "Rocco",
+      "valor": 39.90,
+      "estoque": 25,
+      "capa": "assets/harryPotterFilosofal.jpg",
+      "sinopse": "O jovem Harry Potter descobre que é um bruxo e começa sua jornada na Escola de Magia de Hogwarts."
+    },
+    {
+      "id": "11",
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "autor": "J.R.R. Tolkien",
+      "editora": "HarperCollins Brasil",
+      "valor": 69.90,
+      "estoque": 10,
+      "capa": "assets/senhorDosAneis.webp",
+      "sinopse": "Frodo Bolseiro embarca em uma missão épica para destruir o Um Anel e salvar a Terra-média do mal."
+    },
+    {
+      "id": "12",
+      "titulo": "Duna",
+      "autor": "Frank Herbert",
+      "editora": "Aleph",
+      "valor": 74.90,
+      "estoque": 12,
+      "capa": "assets/duna.webp",
+      "sinopse": "No planeta deserto Arrakis, Paul Atreides se envolve em uma guerra pelo controle do recurso mais valioso do universo."
+    },
+    {
+      "id": "13",
+      "titulo": "Percy Jackson e o Ladrão de Raios",
+      "autor": "Rick Riordan",
+      "editora": "Intrínseca",
+      "valor": 34.90,
+      "estoque": 20,
+      "capa": "assets/percyJackson.webp",
+      "sinopse": "Percy descobre que é filho de Poseidon e precisa evitar uma guerra entre os deuses do Olimpo."
+    },
+
+    {
+      "id": "14",
+      "titulo": "Jogos Vorazes",
+      "autor": "Suzanne Collins",
+      "editora": "Rocco",
+      "valor": 42.90,
+      "estoque": 18,
+      "capa": "assets/jogosVorazes.png",
+      "sinopse": "Em um futuro distópico, Katniss Everdeen participa de um jogo mortal transmitido ao vivo para manter o controle da Capital."
+    },
+    {
+      "id": "15",
+      "titulo": "Crepúsculo",
+      "autor": "Stephenie Meyer",
+      "editora": "Intrínseca",
+      "valor": 39.90,
+      "estoque": 14,
+      "capa": "assets/crepusculo.jpg",
+      "sinopse": "Bella Swan se muda para Forks e se apaixona por Edward Cullen, um misterioso vampiro."
+    },
+    {
+      "id": "16",
+      "titulo": "A Culpa é das Estrelas",
+      "autor": "John Green",
+      "editora": "Intrínseca",
+      "valor": 29.90,
+      "estoque": 22,
+      "capa": "assets/culpaEstrelas.jpg",
+      "sinopse": "Hazel e Gus, dois adolescentes com câncer, vivem uma história de amor emocionante e comovente."
+    },
+    {
+      "id": "17",
+      "titulo": "O Código Da Vinci",
+      "autor": "Dan Brown",
+      "editora": "Arqueiro",
+      "valor": 54.90,
+      "estoque": 9,
+      "capa": "assets/codigoDaVinci.webp",
+      "sinopse": "O simbologista Robert Langdon desvenda uma série de enigmas ligados a um segredo milenar escondido pela Igreja."
+    },
+    {
+      "id": "18",
+      "titulo": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "editora": "HarperCollins Brasil",
+      "valor": 45.00,
+      "estoque": 11,
+      "capa": "assets/hobbit.webp",
+      "sinopse": "Bilbo Bolseiro parte em uma aventura com anões para recuperar um tesouro guardado por um dragão."
+    },
+    {
+      "id": "19",
+      "titulo": "It: A Coisa",
+      "autor": "Stephen King",
+      "editora": "Suma",
+      "valor": 79.90,
+      "estoque": 7,
+      "capa": "assets/itCoisa.jpg",
+      "sinopse": "Um grupo de amigos enfrenta uma criatura aterrorizante que se alimenta do medo das crianças na cidade de Derry."
+    },
+    {
+      "id": "20",
+      "titulo": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupéry",
+      "editora": "Agir",
+      "valor": 24.90,
+      "estoque": 30,
+      "capa": "assets/pequenoPrincipe.webp",
+      "sinopse": "Um piloto encontra um menino vindo de outro planeta, que compartilha reflexões profundas sobre a vida e os sentimentos."
     }
+
   ],
   "usuario": [
     {
