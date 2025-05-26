@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LivrariaService } from '../../core/services/livraria.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Livro } from '../../core/types/livro';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Pedido } from '../../core/types/pedido';
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-visualizar-livro',
-  imports: [FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule, RouterLink],
   templateUrl: './visualizar-livro.component.html',
   styleUrl: './visualizar-livro.component.css'
 })

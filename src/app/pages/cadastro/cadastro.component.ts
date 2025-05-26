@@ -30,24 +30,34 @@ export class CadastroComponent {
   erroCadastro: boolean = false;
 
   cadastrar() {
+    if(this.usuario.email == '' || this.usuario.email == undefined || this.usuario.senha == '' || this.usuario == undefined || this.usuario.nome == '' || this.usuario.nome == undefined) {
+      this.erroCadastro = true;
+      setTimeout(() => {
+        const pop = document.getElementById('erro');
+        if(pop) {
+          pop.style.opacity = '0';
+        }
+      }, 3000);
+      setTimeout(() => {
+        this.erroCadastro = false;
+      }, 4000)
+      return;
+    }
     this.service.incluir(this.usuario).subscribe(() => {
       this.sucessoCadastro = true;
       this.usuario = { nome: '', email: '', senha: '' }; 
 
+      setTimeout(() => {
+        const pop = document.getElementById('certo')
+        if(pop) {
+          pop.style.opacity = '0'
+        }
+      }, 3000);
       
       setTimeout(() => {
         this.sucessoCadastro = false;
         this.router.navigate(['/login']);
-      }, 3000);
-    }, erro => {
-      this.erroCadastro = true;
-
-      
-      setTimeout(() => {
-        this.erroCadastro = false;
-      }, 3000);
-
-      console.error(erro);
+      }, 4500);
     });
   }
 }

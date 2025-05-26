@@ -2,11 +2,11 @@
   <div class="cadastro-box">
     <h2>Cadastro</h2>
 
-    <div *ngIf="sucessoCadastro" class="popup sucesso-popup">
+    <div *ngIf="sucessoCadastro" class="popup sucesso-popup" id="certo">
       Cadastro realizado com sucesso!
     </div>
     
-    <div *ngIf="erroCadastro" class="popup erro-popup">
+    <div *ngIf="erroCadastro" class="popup erro-popup" id="erro">
       Erro ao cadastrar usuário.
     </div>
     

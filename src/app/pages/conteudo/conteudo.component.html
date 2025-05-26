@@ -4,45 +4,49 @@
   </div>
 </div>
 <div class="texto">
-  <p>
-    <strong>Bem-vindo à Livraria Alexandria</strong><br>
-    Descubra um universo de histórias, conhecimento e imaginação.<br>
-    Na Livraria Alexandria, cada livro é uma porta aberta para novos mundos.<br><br>
+  <div class="esquerdo">
+    <h1>Bem-vindo à Alexandria</h1>
+    <p>Descubra um universo de histórias, conhecimento e imaginação.<br>
+      Na Livraria Alexandria, cada livro é uma porta aberta para novos mundos.<br><br>
 
-    Aqui você encontra os melhores títulos da literatura nacional e internacional, lançamentos imperdíveis, clássicos inesquecíveis, romances, suspenses, fantasias, biografias, livros técnicos e muito mais — tudo em um só lugar.
-  </p>
-
+      Aqui você encontra os melhores títulos da literatura nacional e internacional, lançamentos imperdíveis, clássicos
+      inesquecíveis, romances, suspenses, fantasias, biografias, livros técnicos e muito mais — tudo em um só lugar.</p>
+  </div>
   <span class="divisoria"></span>
-
-  <div>
-    <strong>Por que escolher a Alexandria?</strong>
+  <div class="direita">
+    <h1>Por que escolher a Alexandria?</h1>
     <ul>
       <li>Entrega rápida e segura para todo o Brasil</li>
       <li>Compra fácil, segura e com diversas formas de pagamento</li>
       <li>Promoções exclusivas e descontos especiais</li>
       <li>Catálogo atualizado com milhares de títulos</li>
     </ul>
-    Seja para aprender, sonhar, se emocionar ou apenas relaxar, temos o livro certo para você.<br>
-    <strong>Explore, leia, viva — porque cada página tem o poder de transformar.</strong>
+    <p> Seja para aprender, sonhar, se emocionar ou apenas relaxar, temos o livro certo para você.<br>
+      <span>Explore, leia, viva — porque cada página tem o poder de transformar.</span>
+    </p>
   </div>
 </div>
 
 
 <div class="container">
-  @for (livro of listaLivro; track livro) {
-  <div class="card">
-    <img src="{{ livro.capa }}" alt="capa">
-    <div class="info">
-      <div class="linha">
-        <span class="label">{{ livro.titulo}}</span>
-        <span class="label">R${{ livro.valor}}</span>
+  <h1>Alguns de nossos livros: </h1>
+  <div class="containerCards">
+    @for (livro of listaLivro; track livro) {
+    <div class="card">
+      <img src="{{ livro.capa }}" alt="capa">
+      <div class="info">
+        <div class="linha">
+          <span class="label">{{ livro.titulo}}</span>
+          <span class="label">R${{ livro.valor}}</span>
+        </div>
+        <div class="linha">
+          <span class="label">{{ livro.autor}}</span>
+          <span class="label">{{ livro.editora}}</span>
+        </div>
       </div>
-      <div class="linha">
-        <span class="label">{{ livro.autor}}</span>
-        <span class="label">{{ livro.editora}}</span>
-      </div>
+      <button class="btn" [routerLink]="['/visualizar', livro.id]">Saber mais</button>
     </div>
-    <button class="btn" [routerLink]="['/visualizar', livro.id]">Saber mais</button>
+    }
   </div>
-  }
+  <a routerLink="/livros" class="todos">Ver todos os livros</a>
 </div>

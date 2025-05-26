@@ -1,5 +1,13 @@
 .secao {
   padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/banner3.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .titulo {
@@ -8,6 +16,13 @@
   margin-bottom: 2rem;
   font-family: var(--fonte-titulo);
   color: var(--primaria);
+  color: white;
+  font-family: var(--fonte-titulo);
+  padding: 10px;
+  background-color: var(--primaria);
+  border-radius: 5px;
+  box-shadow: var(--sombra);
+  width: calc(240px * 3 + 2rem * 4);
 }
 
 .listaLivros {
@@ -15,6 +30,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  padding: 50px;
 }
 
 .livro {
@@ -82,7 +98,7 @@
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
   text-decoration: none;
   font-family: var(--fonte-texto);
   font-size: 0.85rem;
@@ -94,20 +110,5 @@
 }
 
 .visualizar:hover {
-  background-color: #152d4a;
-}
-
-.comprar {
   background-color: var(--segundaria);
-  color: white;
-}
-
-.comprar:hover {
-  background-color: #b9931f;
-}
-
-.comprar:disabled {
-  background-color: #cccccc;
-  color: #666666;
-  cursor: not-allowed;
 }

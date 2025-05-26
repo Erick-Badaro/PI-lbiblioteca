@@ -28,9 +28,31 @@
 .container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 35px;
+  flex-direction: column;
   padding: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/banner3.jpg');
+}
+
+.container h1 {
+  color: white;
+  font-family: var(--fonte-titulo);
+  padding: 10px;
+  background-color: var(--destaques);
+  border-radius: 5px;
+  box-shadow: var(--sombra);
+}
+
+.containerCards {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 35px;
+  flex-wrap: wrap
 }
 
 .card img {
@@ -48,20 +70,16 @@
   padding-top: 50px;
   gap: 20px;
   transition: 0.5s;
-}
-
-.card span {
-  display: flex;
-  gap: 20px;
-}
-
-
-.card {
   width: 300px;
   border-radius: 12px;
   box-shadow: var(--sombra);
   padding: 20px;
   position: relative;
+}
+
+.card span {
+  display: flex;
+  gap: 20px;
 }
 
 .info {
@@ -78,7 +96,7 @@
 
 .label {
   font-size: 0.85rem;
-  text-transform: uppercase;
+  font-family: var(--fonte-texto);
   color: #333;
 }
 
@@ -92,37 +110,74 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-family: Georgia, serif;
+  font-family: var(--fonte-texto);
+  transition: 0.5s;
 }
 
+.todos {
+    background-color: #6d2c22;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: var(--fonte-texto);
+  transition: 0.5s;
+  text-decoration: none;
+}
 
 .card:hover {
   transform: translateY(-10px);
 }
 
-.texto {
-  padding: 25px 50px;
-  background-color: var(--primaria);
-  color: white;
-  display: flex;
-  gap: 50px;
-  min-height: 300px;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--fonte-texto);
+.btn:hover,
+.todos:hover {
+  background-color: var(--segundaria);
 }
 
-.texto>p>strong {
+.texto {
+  background-color: var(--primaria);
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto > .esquerdo {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+}
+
+.texto > .esquerdo h1,
+.texto > .direita h1  {
   font-family: var(--fonte-titulo);
 }
 
-.texto>p:nth-child(1) {
-  width: 500px;
+.texto > .esquerdo p,
+.texto > .direita p, li {
+  font-family: var(--fonte-texto);
 }
 
-.texto>span {
+.texto > .divisoria {
   background-color: white;
   width: 2px;
   border-radius: 2px;
-  height: 250px;
+  height: 350px;
+}
+
+.texto .direita {
+  width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.texto > .direita ul {
+  margin-left: 50px;
 }

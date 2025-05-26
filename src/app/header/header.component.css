@@ -6,8 +6,8 @@
     align-items: center;
     height: 100px;
     width: 100%;
-    box-shadow: var(--sombra);
     color: var(--cor-texto);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .container h1 a {

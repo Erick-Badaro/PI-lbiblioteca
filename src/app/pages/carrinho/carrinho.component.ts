@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { LivrariaService } from '../../core/services/livraria.service';
 import { Pedido } from '../../core/types/pedido';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { carrinho } from '../../core/types/carrinho';
 import { Livro } from '../../core/types/livro';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carrinho',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './carrinho.component.html',
   styleUrl: './carrinho.component.css'
 })
