@@ -1,59 +1,89 @@
-# Livraria
+# 📚 Alexandria - Loja Virtual de Livros
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Este projeto é uma **loja virtual de livros** desenvolvida como exercício prático de front-end, com funcionalidades completas para cadastro, login, visualização de produtos, carrinho de compras e gerenciamento de estoque, utilizando **Local Storage** para persistência dos dados.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔧 Tecnologias Utilizadas
 
-```bash
-ng serve
-```
+- **HTML5**
+- **CSS3**
+- **TypeScript**
+- **Angular**
+- **LocalStorage (nativo do navegador)**
+- JSON Server (API mockada)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## ✨ Funcionalidades
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 👥 Autenticação (Login e Cadastro)
 
-```bash
-ng generate --help
-```
+- Cadastro de novos usuários com:
+  - Validação de campos obrigatórios
+- Login com:
+  - Verificação de credenciais
+  - Armazenamento de sessão no LocalStorage
+  - Redirecionamento após login
 
-## Building
+---
 
-To build the project run:
+### 📚 Catálogo de Livros
 
-```bash
-ng build
-```
+- Listagem dos livros disponíveis com:
+  - Capa, título, autor, editora, sinopse e valor
+  - Estoque visível ao usuário
+- Botão "Visualizar" leva para uma página com mais detalhes
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+### 🛒 Carrinho de Compras
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Adição de livros ao carrinho
+- Validação de estoque disponível
+- Exclusão de itens individualmente
+- Cálculo automático do valor total
+- Persistência dos itens no **LocalStorage**
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+### ⚙️ Painel do Usuário
 
-For end-to-end (e2e) testing, run:
+- Edição de informações cadastrais
+- Atualização da senha
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🧠 Lógica de Programação
 
-## Additional Resources
+- Toda a lógica foi escrita em TypeScript
+- Utilização de componentes modulares com Angular
+- Serviços (Services) para manipulação de dados
+- Armazenamento e recuperação de dados com `localStorage` (sem banco de dados)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🎨 Créditos Visuais
+
+- Algumas imagens utilizadas foram retiradas de: [Freepik](https://br.freepik.com)
+- Ícones usados no projeto foram obtidos em: [Feather Icons](https://feathericons.com)
+
+---
+
+## 📦 Como Executar o Projeto
+
+1. Clone o repositório: https://github.com/Erick-Badaro/PI-lbiblioteca
+
+2. Instale as dependências: npm install
+
+3. Rode o projeto: ng serve --open
+
+4. Suba o JSON-SERVER: npx json-server db.json
+ (O json-server rodará por padrão na porta 3000, simulando uma API RESTful.)
+
+![image](https://github.com/user-attachments/assets/e1006ef0-21e8-43fc-8893-4257e2b553f2)
+![image](https://github.com/user-attachments/assets/f55bf0e0-8084-4273-aabc-9c771240c557)
+
+
