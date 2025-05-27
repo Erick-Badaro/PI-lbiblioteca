@@ -223,13 +223,5 @@
       "senha": "123senac123"
     }
   ],
-  "pedido": [
-    {
-      "id": "ba9e",
-      "qtd": 1,
-      "livroId": "3",
-      "usuarioId": "6d3d",
-      "valor": 72
-    }
-  ]
+  "pedido": []
 }

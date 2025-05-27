@@ -16,7 +16,8 @@
                 <button (click)="excluir(pedido.id!)"><img src="trash-2.svg" alt=""></button>
             </span>
         </div>
-        }
+    }
+    <p>Total do carrinho: <span>R$ {{ total.toFixed(2) }}</span></p>
         <a routerLink="/livros">Voltar para os livros</a>
     </div>
     <div class="center" *ngIf="sem">

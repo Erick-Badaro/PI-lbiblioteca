@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 50px 0;
 }
 
 .center {
@@ -103,7 +104,8 @@
     font-size: 1.5em;
 }
 
-.center > a {
+.center > a,
+.center > p {
     background-color: var(--primaria);
     padding: 5px;
     border-radius: 5px;
@@ -115,4 +117,13 @@
 
 .center > a:hover {
     background-color: var(--segundaria);
+}
+
+.center > p {
+    background-color: var(--destaques);
+    font-size: 1.5rem;
+}
+
+.center > p span {
+    font-weight: bold;
 }

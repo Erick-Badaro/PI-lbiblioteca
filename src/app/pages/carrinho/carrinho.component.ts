@@ -20,6 +20,7 @@ export class CarrinhoComponent implements OnInit {
   carrinho: carrinho[] = [];
   tem: boolean = false
   sem: boolean = false;
+  total: number = 0;
 
   ngOnInit(): void {
     this.iduser = this.router.snapshot.paramMap.get('id');
@@ -36,6 +37,8 @@ export class CarrinhoComponent implements OnInit {
             qtd: this.pedido[i].qtd,
             valor: this.pedido[i].valor
           });
+
+          this.total += Number(this.pedido[i].valor);
         });
       }
       if(this.pedido.length > 0) {
@@ -52,6 +55,10 @@ export class CarrinhoComponent implements OnInit {
     this.livraria.excluirPedido(id).subscribe(() => {
       window.location.reload();
     })
+  }
+
+  exibir() {
+    return this.total;
   }
 
 }
